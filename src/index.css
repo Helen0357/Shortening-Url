@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --first-color: #ffcbcb;
+  --second-color:#ffb5b5;
+  --third-color: #407088; 
+  --fourth-color:#132743; 
+}
+img {
+  max-width: 100%;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.max-width {
+  @apply px-5 lg:max-w-5xl lg:mx-auto xl:max-w-6xl 2xl:px-0;
+}
+
+h1 {
+  line-height: 1.2 !important;
+}
+header{
+  background: #ffcbcb ;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+p {
+  line-height: 1.8;
+}
+.popup{
+  background-color: var(--fourth-color);
+}
+.lgList li{
+  padding: 10px;
+  transition: 0.3s;
+}
+.lgList li:hover{
+background-color: #ffcbcb49;
+border-radius: 5px;
+}
+.btn-cta {
+  background-color:  var(--second-color) ;
+  color: var(--fourth-color);
+  font-size: 15px;
+  @apply  py-2 px-7  hover:opacity-75 transition-all duration-150 cursor-pointer;
+}
+.btn-cta2 {
+  background-color:  var(--fourth-color) ;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  @apply  py-2 px-5  hover:opacity-75 transition-all duration-150 cursor-pointer;
+}
+.login{
+  color: var(--fourth-color);
+}
+.shortener {
+  background: url('/images/abstract-soft-pastel-colorful-background.jpg');
+  height: 17.188rem;
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shortener .result{
+  position: absolute;
+  bottom: 20px;
+  width: 60%;
+}
+.shortener .result a {
+  font-size: 15px;
+}
+.shortener img {
+  height: 17.188rem;
+  @apply w-full rounded-lg;
+}
+
+.shortener .form {
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  width: 65%;
+}
+.shortener .form input{
+  outline: none;
+}
+
+.boost {
+  background: url('/images/abstract-soft-pastel-colorful-background.jpg');
+  height: 17.188rem;
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+  margin-top: 90px;
+}
+.boost h2 {
+  color: var(--fourth-color);
+}
+
+.boost img {
+  height: 17.188rem;
+  @apply w-full;
+}
+
+.boost .boost-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.adv{
+  background-color: #cfe5f0;
+}
+footer{
+  background: var(--fourth-color);
+}
+footer ul li {
+  margin-bottom: 20px;
+}
+footer h3 {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .card article:nth-child(3) {
+    transform: translateY(2rem);
+  }
+
+  .card article:last-child {
+    transform: translateY(4rem);
+  }
+
+  .line {
+    @apply bg-cyan-500 h-2 w-full absolute;
+    top: 50%;
+  }
+}
